@@ -4,7 +4,7 @@
         {
             "label": "Sass Compile",
             "type": "shell",
-            "command": "sass --no-source-map --watch ./sass/styles.scss ./dist/styles.css",
+            "command": "sass --no-source-map --watch ./sass/styles.scss ./styles.css",
             "group": "build"
         }
     ]

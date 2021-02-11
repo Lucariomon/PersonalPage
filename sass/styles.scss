@@ -84,6 +84,14 @@ nav{
 }
 
 .area{
+    border: 3px outset transparent;
+    background-color: $shadow-color;    
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.areaProjects{
   border: 3px outset transparent;
   background-color: $shadow-color;    
   text-align: center;
