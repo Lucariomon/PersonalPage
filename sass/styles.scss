@@ -10,25 +10,114 @@ $section-width:45%;
     font-family: $generalFont;
 }
 
-/*Escritorio*/
-@media(min-width: 1200px){
-body{color:red}
+
+// X-Small devices (portrait phones, less than 576px)
+@media screen and (max-width: 575.98px) {    
+    .areaProjects{
+        width: 100%;
+        float:left;
+    }
+    .WelcomeArea{
+        width: 100%;
+    }
+    .area{
+        width: 100%;
+    }
+    #Interests{
+        width: 100%;
+        float: left;
+    } 
 }
 
-/*Escritorio pequeño o tablet*/
-@media(min-width: 768px) and (max-width: 979px){
-    body{color:green}
+// Small devices (landscape phones, less than 768px)
+@media screen and (max-width: 767.98px) {
+    .areaProjects{
+        width: 100%;
+        float:left;
+    }
+    .WelcomeArea{
+        width: 100%;
+    }
+    .area{
+        width: 100%;
+    }
+    #Interests{
+        width: 100%;
+        float: left;
+    } 
+ }
+
+// Medium devices (tablets, less than 992px)
+@media screen and (max-width: 991.98px) { 
+    .areaProjects{
+        width: 100%;
+        float:left;
+    }
+    .WelcomeArea{
+        width: 100%;
+    }
+    .area{
+        width: 100%;
+    }
+    #Interests{
+        width: 100%;
+        float: left;
+    } 
 }
 
-/*Tablet o Smartphone*/
-@media(min-width: 767px){
-    body{color:blue}
+// Large devices (desktops, less than 1200px)
+@media screen and (max-width: 1199.98px) { 
+    .areaProjects{
+        width: 100%;
+        float:left;
+    }
+    .WelcomeArea{
+        width: 100%;
+    }
+    .area{
+        width: 100%;
+    }
+    #Interests{
+        width: 100%;
+        float: left;
+    } 
 }
 
-/*Smartphone*/
-@media(min-width: 480px){
-    body{color:yellow}
-}
+// X-Large devices (large desktops, less than 1400px)
+@media screen and (max-width: 1399.98px) { 
+    .areaProjects{
+        width: $section-width;
+        float:left;
+    }
+    .WelcomeArea{
+        width: 100%;
+    }
+    .area{
+        width: $section-width;
+    }
+    #Interests{
+        width: 50%;
+        float: right;
+    } 
+ }
+
+ @media screen and (max-width: 1750px) { 
+    .areaProjects{
+        width: $section-width;
+    }
+    .WelcomeArea{
+        width: 100%;
+    }
+    .area{
+        width: $section-width;
+        float:left;
+    }
+    #Interests{
+        width: 50%;
+        float: right;
+    } 
+ }
+
 
 @media only screen and (min-width:1200px){
     .nav-item > .nav-link{
@@ -48,7 +137,6 @@ body{color:red}
 
 .banner{
     background-color: $general-color;
-    display: flex;
 }
 
 
@@ -126,10 +214,9 @@ nav{
     text-align: center;
     margin: 20px;
     border-radius: 20px;
-    width: $section-width;
-    display: inline-block;  float: left;
+    display: inline-block;
     img{
-        width: 4%;
+        width: 5%;
         float:left;
         margin-left: 20px;
         margin-right: 20px;
@@ -138,19 +225,38 @@ nav{
     }
 }
 
+.WelcomeArea{
+  border: 3px outset transparent;
+  background-color: $shadow-color;    
+  text-align: center;
+  border-radius: 20px;
+  display: inline-block;
+}
 .area{
   border: 3px outset transparent;
   background-color: $shadow-color;    
   text-align: center;
   margin: 20px;
   border-radius: 20px;
-  width: $section-width;
   display: inline-block;
   ul{
       list-style: none;
   }
 
-} 
+}
+
+#Welcome, #About{
+    float:left;
+}
+
+#Academic{
+    float:left;
+    img{
+        width: 200px;
+        border-radius: 5px;
+    }
+}
+
 table, td, th {
    border: 4px solid $general-color;
    border-radius: 20px;
@@ -167,19 +273,6 @@ p{
     padding: 20px;
 }
 
-#Welcome, #About, #Projects{
-    float:left;
-}
-
-
-#Academic{
-    float:left;
-    img{
-        width: 200px;
-        border-radius: 5px;
-    }
-}
-
 footer{
     display: flex;
     background-color: $general-color;
@@ -187,12 +280,12 @@ footer{
     margin-bottom: 0;
 }
 
-#Interest{
-    float:right;
-    width: 50%;
-}
-
 img{
     max-width:100%;
     height:auto;
+}
+iframe{
+    max-width:100%;
+    height: auto;
+    float: left;
 }

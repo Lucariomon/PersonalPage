@@ -1,30 +1,119 @@
-@charset "UTF-8";
 * {
   font-family: MedievalSharp, Arial, Helvetica, sans-serif;
 }
 
-/*Escritorio*/
-@media (min-width: 1200px) {
-  body {
-    color: red;
+@media screen and (max-width: 575.98px) {
+  .areaProjects {
+    width: 100%;
+    float: left;
+  }
+
+  .WelcomeArea {
+    width: 100%;
+  }
+
+  .area {
+    width: 100%;
+  }
+
+  #Interests {
+    width: 100%;
+    float: left;
   }
 }
-/*Escritorio pequeño o tablet*/
-@media (min-width: 768px) and (max-width: 979px) {
-  body {
-    color: green;
+@media screen and (max-width: 767.98px) {
+  .areaProjects {
+    width: 100%;
+    float: left;
+  }
+
+  .WelcomeArea {
+    width: 100%;
+  }
+
+  .area {
+    width: 100%;
+  }
+
+  #Interests {
+    width: 100%;
+    float: left;
   }
 }
-/*Tablet o Smartphone*/
-@media (min-width: 767px) {
-  body {
-    color: blue;
+@media screen and (max-width: 991.98px) {
+  .areaProjects {
+    width: 100%;
+    float: left;
+  }
+
+  .WelcomeArea {
+    width: 100%;
+  }
+
+  .area {
+    width: 100%;
+  }
+
+  #Interests {
+    width: 100%;
+    float: left;
   }
 }
-/*Smartphone*/
-@media (min-width: 480px) {
-  body {
-    color: yellow;
+@media screen and (max-width: 1199.98px) {
+  .areaProjects {
+    width: 100%;
+    float: left;
+  }
+
+  .WelcomeArea {
+    width: 100%;
+  }
+
+  .area {
+    width: 100%;
+  }
+
+  #Interests {
+    width: 100%;
+    float: left;
+  }
+}
+@media screen and (max-width: 1399.98px) {
+  .areaProjects {
+    width: 45%;
+    float: left;
+  }
+
+  .WelcomeArea {
+    width: 100%;
+  }
+
+  .area {
+    width: 45%;
+  }
+
+  #Interests {
+    width: 50%;
+    float: right;
+  }
+}
+@media screen and (max-width: 1750px) {
+  .areaProjects {
+    width: 45%;
+  }
+
+  .WelcomeArea {
+    width: 100%;
+  }
+
+  .area {
+    width: 45%;
+    float: left;
+  }
+
+  #Interests {
+    width: 50%;
+    float: right;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -44,7 +133,6 @@
 }
 .banner {
   background-color: #79e2fc;
-  display: flex;
 }
 
 main {
@@ -124,17 +212,23 @@ nav a {
   text-align: center;
   margin: 20px;
   border-radius: 20px;
-  width: 45%;
   display: inline-block;
-  float: left;
 }
 .areaProjects img {
-  width: 4%;
+  width: 5%;
   float: left;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20%;
   margin-top: -30px;
+}
+
+.WelcomeArea {
+  border: 3px outset transparent;
+  background-color: #ecf0f1;
+  text-align: center;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .area {
@@ -143,11 +237,22 @@ nav a {
   text-align: center;
   margin: 20px;
   border-radius: 20px;
-  width: 45%;
   display: inline-block;
 }
 .area ul {
   list-style: none;
+}
+
+#Welcome, #About {
+  float: left;
+}
+
+#Academic {
+  float: left;
+}
+#Academic img {
+  width: 200px;
+  border-radius: 5px;
 }
 
 table, td, th {
@@ -168,18 +273,6 @@ p {
   padding: 20px;
 }
 
-#Welcome, #About, #Projects {
-  float: left;
-}
-
-#Academic {
-  float: left;
-}
-#Academic img {
-  width: 200px;
-  border-radius: 5px;
-}
-
 footer {
   display: flex;
   background-color: #79e2fc;
@@ -187,12 +280,13 @@ footer {
   margin-bottom: 0;
 }
 
-#Interest {
-  float: right;
-  width: 50%;
-}
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  float: left;
 }
