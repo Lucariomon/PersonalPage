@@ -207,6 +207,17 @@ h4 {
 .book-img {
   width: 200px;
   height: 250px;
+  border: 1px solid #159ec1;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.game-img {
+  width: 200px;
+  height: 250px;
+  border: 1px solid #159ec1;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 .header {
@@ -372,6 +383,7 @@ iframe {
   text-align: justify;
   background-color: white;
   width: 620px;
+  margin-bottom: 10px;
 }
 
 .ytlogo {
