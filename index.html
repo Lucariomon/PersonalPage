@@ -6,9 +6,10 @@
     <meta name="author" content="Carlos Guerrero Medina">
     <!--Title-->
     <title>Carlos Guerrero's page</title>
-    <!--Google Font-->
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <!--Responsive Design-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--CSS Styles-->
@@ -54,10 +55,13 @@
                             <a class = "nav-link" href="#Projects">Projects</a>
                           </li>
                           <li class="nav-item">
-                            <a class = "nav-link" href="#Interest">Interesting sites</a>
+                            <a class = "nav-link" href="#Interest">Interests</a>
                           </li>
                           <li class="nav-item">
                             <a class = "nav-link" href="#Academic">Academic Info</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class = "nav-link" href="#Fiction">Other things</a>
                           </li>
                         </ul>
                       </div>
@@ -65,46 +69,49 @@
                   </nav>
             </div>
         </div>
-        <!--Banner-->
-        <div class="banner">
-            <div class="container-fluid">
-                <img id="personalImg" src="./img/foto.PNG" alt="Personal photography">
-                <h1>Carlos Guerrero Medina</h1>
-            </div>
-        </div>
     </header>
+    <!--Banner-->
+    <div class="banner">
+        <div class="container-fluid">
+            <img id="personalImg" src="./img/foto.PNG" alt="Personal photography">
+              <h1>Carlos Guerrero Medina</h1>
+        </div>
+    </div>
     <!--End Header-->
     <!--Main-->
     <main>
         <!--Welcome-->
         <section class="WelcomeArea" id="Welcome">
             <h2>Welcome to my personal page!</h2>
-            <p>This is my personal page, in which you can find information about me, my academic formation, my favorite videos, and links to different sites that I like.</p>
+            <p>This is my personal page, in which you can find information about me, my academic formation, my favorite Youtube videos, and links to different sites that I like.</p>
         </section>
         <!--Interest-->
         <section class="area" id="Interest">
-            <h2>My Interests</h2>
-            <p>I always used to like watching and reading stuff. I like various Youtube channels and videos.</p>
-                <h3>My favorite videos</h3>
-                    <p>There are two of my favorite videos:</p>
-                    <h4>"Don't hug me I'm Scared"</h4>
-                        <p>This was a series of videos that I saw back in 2014. I encounter these as bizarre as funny.</p>
-                        <iframe src="https://www.youtube.com/embed/9Ux2ZxSXePs?start=209" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Links to sites of my interest</h3>
-                    <p>I like a lot to spend time seeing Youtube channels, here are some of my favorites:</p>
-                    <p><a href="https://www.youtube.com/c/vandal" target="_blank" title="Vandal Youtube Channel">Vandal</a></p>
-                    <p><a href="https://www.youtube.com/c/AbsoluteSite" target="_blank" title="Absolute Youtube Channel">Absolute</a></p>
-                    <p><a href="https://www.youtube.com/c/ELBANANEROOFICIAL"target="_blank" title="El Bananero Youtube Channel">Bananero</a></p>
+            <h2>Videos and music that I like</h2>
+            <p>I always used to like watching and reading a long variety of things in my day-to-day. I also like various Youtube channels and videos.</p>
+            <h3>My favorite videos</h3>
+            <p>There are two of my favorite videos:</p>
+            <iframe src="https://www.youtube.com/embed/9Ux2ZxSXePs?start=209" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id= "video" src="https://www.youtube.com/embed/nEbIuDuW7l8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Some Youtube Channels that I like</h3>
+            <p>Here are some channels that i usually watch or that I like a lot:</p>
+            <div class="container-fluid" id="link-lista">
+                <p class="list-links"><a href="https://www.youtube.com/c/vandal" target="_blank" title="Vandal Youtube Channel">Vandal</a></p>
+                <p class="list-links"><a href="https://www.youtube.com/c/AbsoluteSite" target="_blank" title="Absolute Youtube Channel">Absolute</a></p>
+                <p class="list-links"><a href="https://www.youtube.com/c/ELBANANEROOFICIAL"target="_blank" title="El Bananero Youtube Channel">El Bananero</a></p>
+                <p class="list-links"><a href="https://www.youtube.com/user/VivaLaDirtLeague"target="_blank" title="VivaLaDirtLeague Channel">Viva La Dirt League</a></p>
+                <img class="ytlogo" src="./img/yt.png" alt="Youtube logo"/>
+            </div>
         </section>
         <!--About-->
         <section class="area" id="About">
             <h2>About me</h2>
-            <p>I am a penultimate semester student of Computer Engineering at Los Andes University. I like to spend time on the internet searching for various kinds of stuff, and I like working hard to learn about my major when it is required. 
+            <p>I am a penultimate semester student of Computer Engineering at Uniandes. I like to spend time on the internet searching for various kinds of stuff, and I like working hard to learn about my major when it is required. 
             Recently, I started to spend a lot of time seeing Twitch and Youtube (a guilty habit, maybe!).
             I also like to play distinct types of videogames (like RPG's or SandBox) and watching series of suspense or drama.
             </p>
             <div class="table-responsive">
-                <table>
+                <table class="table">
                     <caption>Personal information</caption>
                     <thead>
                         <tr>
@@ -127,18 +134,59 @@
         </section>
         <!--Projects-->
         <section class="areaProjects" id="Projects">
-            <h2>Projects</h2>
-            <a href="https://www.facebook.com/NanAssist-1945890689044671/"target="_blank" ><img src="./img/nana.png" alt="NanAssist logo"> </a>
-            <p>In the mid-career project at Los Andes University, I worked with a team on a Mobile App which purpose was to help elder people.</p>
+            <h2>Project, experience and Leadership</h2>
+            <ul>
+                <a href="https://www.facebook.com/NanAssist-1945890689044671/"target="_blank" ><img src="./img/nana.png" alt="NanAssist logo"> </a>
+                <li><em>Mid-career project at Uniandes: Mobile App which purpose was to help elder people.</em></li>
+                <li>
+                    <ol>
+                        <li>Worked with a team to ideate and develop an IT solution</li>
+                        <li>Developed a mobile application together with a work team</li>
+                        <li>I developed soft skills like creativity and teamwork</li>
+                    </ol>
+                </li>
+                <hr>
+                <a href="https://www.teleperformance.com/en-us/"target="_blank" ><img src="./img/teleperformance.png" alt="TP logo"> </a>
+                <li><em>Teleperformance, Semibilingual Call Center Agent:</em></li>
+                <li>
+                    <ol>
+                        <li>Worked with a team in order to reach goals of productivity and quality as well as to review and improve these indicators</li>
+                        <li>Participated in team meetings to verify the progress of the group</li>
+                        <li>Dealt with people to help them with a variety of issues that were related to their work, following a knowledge base</li>
+                    </ol>
+                </li>
+                <hr>
+                <li><em>The Church of Jesus Christ of Latter-day Saints, Religious teaching and office work</em></li>
+                <li>
+                    <ol>
+                        <li>Helped with labors related with the finance and management of a ward of the church</li>
+                        <li>Collaborated with other people reviewing reports and statistics</li>
+                    </ol>
+            </ul>
+            </p>
+        </section>
+
+        <!--Books, videogames and movies-->
+        <section class="area" id="Fiction">
+            <h2>Other things that I like</h2>
+            <h3>Some of my favorite books</h3>
+            <img class="book-img" src="./img/farabeuf.png" alt="Farabeuf Cover"/>
+            <img id="book-pulp" class="book-img" src="./img/pulp.png" alt="Pulp Cover"/>
+            <h3>Some of my favorite videogames</h3>
+            <h3>One of my favorite songs</h3>
         </section>
          <!--Academic-->
         <section class="area" id="Academic">
             <h2>My academic formation</h2>
             <ul>
-                <li><em>IED San Francisco</em>, "High School" degree (Obtained in 2015) </li> <img src="./img/sfco.PNG" alt ="San Francisco School"/>
-                <li><em>Uniandes</em>, Computer Science (2016 - currently)  </li> <img src="./img/andes.png" alt="Uniandes University"/>
+                <img class="sfco" src="./img/sfco1.PNG" alt ="San Francisco School"/> 
+                <li><em>IED San Francisco</em>, "High School" degree (Obtained in 2015) </li>
+                <hr>
+                <img class="uniandes" src="./img/andes.png" alt="Uniandes University"/>
+                <li><em>Uniandes</em>, Computer Science (2016 - currently) </li>
             </ul>
         </section>
+
     </main>
     <!--End Main-->
     <!--Footer-->
