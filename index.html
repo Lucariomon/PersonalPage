@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Comentarios Juan José Peña:
+    Generales:
+        -Hay 2 archivos de Hojas de estilo (./styles.css y ./dist/styles.css). Podría mejor usarse 1 o procurar ordenarlas en una sola carpeta.
+        -El diseño responsive es bueno, solo el footer presenta porblemas en tamaños muy pequeños
+        -Creo que algunos colores son muy brillantes
+
+    HTML:
+        -Se encuentra mal identado
+        -Según el verificador, se encontraron 1 warning y 17 errores; los más importantes son el uso de atributos en etiquetas que no los permiten, 
+            atributos obsoletos, falta de espacios entre atributos, no correspondencias entre etiquetas padre e hijas.
+        -Se está manejando bootstrap a través del CDN e instalado directamente en el proyecto. Me parece redundante entonces se podría escoger solo 1.
+        -El link de la hoja de estilos propia podría colocarse despúes de las de bootstrap para darle una mayor oportunidad de ser aplicada.
+
+    CSS:
+        -Excelente. Al final tal vez colocar las reglas por id después de todas las de clases para que no pueda causar tanto problema
+
+-->
+
 <head>
     <!--Metadata-->
     <meta charset="UTF-8">
@@ -15,58 +33,54 @@
     <!--CSS Styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!--Bootstrap CSS-->
-    <link 
-        rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" />
     <!--Responsive Bootstrap-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
-    <link 
-    rel="stylesheet"
-    type="text/css"
-    href="./bootstrap/css/bootstrap-responsive.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.css" />
     <!--Favicon-->
     <link rel="icon" type="image/vnd.microsoft.icon" href="./img/favicon.ico" alt="Page icon">
 </head>
+
 <body>
     <!--Header-->
     <header class="header">
         <div class="header-inner">
             <!--Navigation Bar-->
             <div class="container-fluid px-lg-5">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#Welcome">Welcome</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class = "nav-link" href="#Interest">Interests</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#About">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class = "nav-link" href="#Projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class = "nav-link" href="#Fiction">Other things</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class = "nav-link" href="#Academic">Academic Info</a>
-                            </li>  
-                          </ul>
-                      </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Welcome">Welcome</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Interest">Interests</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#About">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Fiction">Other things</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Academic">Academic Info</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </nav>
+                </nav>
             </div>
         </div>
     </header>
@@ -74,7 +88,7 @@
     <div class="banner">
         <div class="container-fluid">
             <img id="personalImg" src="./img/foto.PNG" alt="Personal photography">
-              <h1>Carlos Guerrero Medina</h1>
+            <h1>Carlos Guerrero Medina</h1>
         </div>
     </div>
     <!--End Header-->
@@ -83,32 +97,45 @@
         <!--Welcome-->
         <section class="WelcomeArea" id="Welcome">
             <h2>Welcome to my personal page!</h2>
-            <p>This is my personal page, in which you can find information about me, my academic formation, my favorite Youtube videos, and links to different sites that I like.</p>
+            <p>This is my personal page, in which you can find information about me, my academic formation, my favorite
+                Youtube videos, and links to different sites that I like.</p>
         </section>
         <!--Interest-->
         <section class="area" id="Interest">
             <h2>Videos and music that I like</h2>
-            <p>I always used to like watching and reading a long variety of things in my day-to-day. I also like various Youtube channels and videos.</p>
+            <p>I always used to like watching and reading a long variety of things in my day-to-day. I also like various
+                Youtube channels and videos.</p>
             <h3>My favorite videos</h3>
             <p>There are two of my favorite videos:</p>
-            <iframe src="https://www.youtube.com/embed/9Ux2ZxSXePs?start=209" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe id= "video" src="https://www.youtube.com/embed/nEbIuDuW7l8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/9Ux2ZxSXePs?start=209" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/nEbIuDuW7l8" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <h3>Some Youtube Channels that I like</h3>
             <p>Here are some channels that i usually watch or that I like a lot:</p>
             <div class="container-fluid" id="link-lista">
-                <p class="list-links"><a href="https://www.youtube.com/c/vandal" target="_blank" title="Vandal Youtube Channel">Vandal</a></p>
-                <p class="list-links"><a href="https://www.youtube.com/c/AbsoluteSite" target="_blank" title="Absolute Youtube Channel">Absolute</a></p>
-                <p class="list-links"><a href="https://www.youtube.com/c/ELBANANEROOFICIAL"target="_blank" title="El Bananero Youtube Channel">El Bananero</a></p>
-                <p class="list-links"><a href="https://www.youtube.com/user/VivaLaDirtLeague"target="_blank" title="VivaLaDirtLeague Channel">Viva La Dirt League</a></p>
-                <img class="ytlogo" src="./img/yt.png" alt="Youtube logo"/>
+                <p class="list-links"><a href="https://www.youtube.com/c/vandal" target="_blank"
+                        title="Vandal Youtube Channel">Vandal</a></p>
+                <p class="list-links"><a href="https://www.youtube.com/c/AbsoluteSite" target="_blank"
+                        title="Absolute Youtube Channel">Absolute</a></p>
+                <p class="list-links"><a href="https://www.youtube.com/c/ELBANANEROOFICIAL" target="_blank"
+                        title="El Bananero Youtube Channel">El Bananero</a></p>
+                <p class="list-links"><a href="https://www.youtube.com/user/VivaLaDirtLeague" target="_blank"
+                        title="VivaLaDirtLeague Channel">Viva La Dirt League</a></p>
+                <img class="ytlogo" src="./img/yt.png" alt="Youtube logo" />
             </div>
         </section>
         <!--About-->
         <section class="area" id="About">
             <h2>About me</h2>
-            <p>I am a penultimate semester student of Computer Engineering at Uniandes. I like to spend time on the internet searching for various kinds of stuff, and I like working hard to learn about my major when it is required. 
-            Recently, I started to spend a lot of time seeing Twitch and Youtube (a guilty habit, maybe!).
-            I also like to play distinct types of videogames (like RPG's or SandBox) and watching series of suspense or drama.
+            <p>I am a penultimate semester student of Computer Engineering at Uniandes. I like to spend time on the
+                internet searching for various kinds of stuff, and I like working hard to learn about my major when it
+                is required.
+                Recently, I started to spend a lot of time seeing Twitch and Youtube (a guilty habit, maybe!).
+                I also like to play distinct types of videogames (like RPG's or SandBox) and watching series of suspense
+                or drama.
             </p>
             <div class="table-responsive">
                 <table class="table">
@@ -136,7 +163,8 @@
         <section class="areaProjects" id="Projects">
             <h2>Project, experience and Leadership</h2>
             <ul>
-                <a href="https://www.facebook.com/NanAssist-1945890689044671/"target="_blank" ><img src="./img/nana.png" alt="NanAssist logo"> </a>
+                <a href="https://www.facebook.com/NanAssist-1945890689044671/" target="_blank"><img src="./img/nana.png"
+                        alt="NanAssist logo"> </a>
                 <li><em>Mid-career project at Uniandes: Mobile App which purpose was to help elder people.</em></li>
                 <li>
                     <ol>
@@ -146,13 +174,16 @@
                     </ol>
                 </li>
                 <hr>
-                <a href="https://www.teleperformance.com/en-us/"target="_blank" ><img src="./img/teleperformance.png" alt="TP logo"> </a>
+                <a href="https://www.teleperformance.com/en-us/" target="_blank"><img src="./img/teleperformance.png"
+                        alt="TP logo"> </a>
                 <li><em>Teleperformance, Semibilingual Call Center Agent:</em></li>
                 <li>
                     <ol>
-                        <li>Worked with a team in order to reach goals of productivity and quality as well as to review and improve these indicators</li>
+                        <li>Worked with a team in order to reach goals of productivity and quality as well as to review
+                            and improve these indicators</li>
                         <li>Participated in team meetings to verify the progress of the group</li>
-                        <li>Dealt with people to help them with a variety of issues that were related to their work, following a knowledge base</li>
+                        <li>Dealt with people to help them with a variety of issues that were related to their work,
+                            following a knowledge base</li>
                     </ol>
                 </li>
                 <hr>
@@ -170,30 +201,31 @@
         <section class="area" id="Fiction">
             <h2>Other things that I like</h2>
             <h3>Some of my favorite books</h3>
-            <img class="book-img" src="./img/farabeuf.png" alt="Farabeuf Cover"/>
-            <img id="book-pulp" class="book-img" src="./img/pulp.png" alt="Pulp Cover"/>
+            <img class="book-img" src="./img/farabeuf.png" alt="Farabeuf Cover" />
+            <img id="book-pulp" class="book-img" src="./img/pulp.png" alt="Pulp Cover" />
             <h3>Some of my favorite videogames</h3>
-            <img class="game-img" src="./img/gtasa.png" alt="GTA San Andreas"/>
-            <img class="game-img" src="./img/hl.png" alt="Half Life"/>
+            <img class="game-img" src="./img/gtasa.png" alt="GTA San Andreas" />
+            <img class="game-img" src="./img/hl.png" alt="Half Life" />
             <h3>One of my favorite songs - Noicanicula, a Bogotá's Rap Classic!</h3>
             <audio controls>
-                <source src="./audio/Noicanicula.mp3"/>
-                <source src="./audio/Noicanicula.ogg"/>
-                <source src="./audio/Noicanicula.wav"/>
+                <source src="./audio/Noicanicula.mp3" />
+                <source src="./audio/Noicanicula.ogg" />
+                <source src="./audio/Noicanicula.wav" />
             </audio>
         </section>
-         <!--Academic-->
+        <!--Academic-->
         <section class="area" id="Academic">
             <h2>My academic formation</h2>
             <ul>
-                <img class="sfco" src="./img/sfco1.PNG" alt ="San Francisco School"/> 
+                <img class="sfco" src="./img/sfco1.PNG" alt="San Francisco School" />
                 <li><em>IED San Francisco</em>, "High School" degree (Obtained in 2015)
-                    <p> I remember my school days with a smile, these were good days. San Francisco was for me was a nice place to live these times of my life.
-                        Also, I managed to be the best ICFES exam the year in which I became graduated.</p> 
+                    <p> I remember my school days with a smile, these were good days. San Francisco was for me was a
+                        nice place to live these times of my life.
+                        Also, I managed to be the best ICFES exam the year in which I became graduated.</p>
                 </li>
-                
+
                 <hr>
-                <img class="uniandes" src="./img/andes.png" alt="Uniandes University"/>
+                <img class="uniandes" src="./img/andes.png" alt="Uniandes University" />
                 <li><em>Uniandes</em>, Computer Science (2016 - currently) </li>
             </ul>
         </section>
@@ -204,13 +236,19 @@
     <footer>
         <p>Author: Carlos Alberto Guerrero Medina</p>
         <p>Contact me via Mail <a href="mailto:ca.guerrero@uniandes.edu.co">(ca.guerrero@uniandes.edu.co)</a></p>
-        <p>My <a href= https://www.linkedin.com/in/carlos-alberto-guerrero-medina-72465a1a1 target="_blank">LinkedIn</a> </p>
-            
+        <p>My <a href=https://www.linkedin.com/in/carlos-alberto-guerrero-medina-72465a1a1 target="_blank">LinkedIn</a>
+        </p>
+
     </footer>
     <!--End Footer-->
 
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
